@@ -2,8 +2,7 @@
 
 # download and install JDK 8
 # Download from Oracle
-wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" \
-           "https://download.oracle.com/otn/java/jdk/8u211-b12/478a62b7d4e34b78b671c754eaaf38ab/jdk-8u211-linux-x64.rpm"
+curl -C - -LR#OH "Cookie: oraclelicense=accept-securebackup-cookie" -k https://download.oracle.com/otn/java/jdk/8u211-b12/478a62b7d4e34b78b671c754eaaf38ab/jdk-8u211-linux-x64.rpm
 yum -y localinstall jdk-*.rpm
 rm -fR jdk-*.rpm
 /usr/sbin/alternatives --config java
