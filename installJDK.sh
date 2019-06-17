@@ -6,7 +6,7 @@ wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://downl
 
 yum -y localinstall jdk-*.rpm
 rm -fR jdk-*.rpm
-/usr/sbin/alternatives --config java
+/usr/sbin/alternatives --set java /usr/java/jdk1.8.0_131/jre/bin/java
 
 # install JCE 8
 # Download from Oracle
